@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BookCatalogue>
+    <Book>
+        <Title>Title1</Title>
+        <Author>Author1</Author>
+        <Date>2001</Date>
+        <ISBN>81-40-34319-1</ISBN>
+        <Publisher>Publisher1</Publisher>
+        <Cost>Cost1</Cost>
+    </Book>
+    <Book>
+        <Title>Title2</Title>
+        <Author>Author2</Author>
+        <Date>2002</Date>
+    </Book>
+    <Book>
+        <Title>Title3</Title>
+        <Author>Author3</Author>
+    </Book>
+    <Book>
+    </Book>
+</BookCatalogue>
