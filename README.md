@@ -6,3 +6,8 @@ Stack:
 - junit 5;
 - javax.xml.parsers (DOM and SAX);
 - JDBC.
+
+So, I get from this:<br>
+![alt text](https://github.com/AlekseiSt/XMLParsing/blob/master/pictures/listOfBooksPicture.jpg)<br>
+this:<br>
+![alt text](https://github.com/AlekseiSt/XMLParsing/blob/master/pictures/booksPicture.jpg)
