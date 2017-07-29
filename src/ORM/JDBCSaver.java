@@ -2,7 +2,10 @@ package ORM;
 
 import Model.Book;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.List;
 
 public class JDBCSaver {
