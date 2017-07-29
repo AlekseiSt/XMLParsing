@@ -1,6 +1,6 @@
 package xml.parsers;
 
-import Model.Book;
+import Model.HBook;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -8,7 +8,6 @@ import org.xml.sax.helpers.DefaultHandler;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +25,7 @@ public class SAXXMLParser {
         }
     }
 
-    public List<Book> parse(String xmlName) {
+    public List<HBook> parse(String xmlName) {
         try {
             BookHandler bookHandler = new BookHandler();
             saxParser.parse(xmlName, bookHandler);
@@ -38,8 +37,8 @@ public class SAXXMLParser {
     }
 
     class BookHandler extends DefaultHandler {
-        List<Book> books = new ArrayList<>();
-        Book bookItem;
+        List<HBook> books = new ArrayList<>();
+        HBook bookItem;
         boolean book;
         boolean title;
         boolean author;
@@ -78,7 +77,7 @@ public class SAXXMLParser {
         @Override
         public void characters(char ch[], int start, int length) throws SAXException {
             if (book) {
-                bookItem = new Book();
+                bookItem = new HBook();
                 book = false;
             } else if (title) {
                 bookItem.setTitle(new String(ch, start, length));
